@@ -11,7 +11,7 @@
  *
  */
 var watson = require('watson-developer-cloud');
-var CONVERSATION_NAME = "ibm-100"; // conversation name goes here.
+var CONVERSATION_NAME = "bot-icaro"; // conversation name goes here.
 var cfenv = require('cfenv');
 var chrono = require('chrono-node');
 var fs = require('fs');
@@ -96,7 +96,7 @@ function initConversation() {
         version: 'v1'
     });
     // check if the workspace ID is specified in the environment
-    conversationWorkspace = process.env.CONVERSATION_WORKSPACE;
+    conversationWorkspace =' b08c955f-a87d-4a92-bf42-63e28a5c396e';
     // if not, look it up by name or create one
     if (!conversationWorkspace) {
         const workspaceName = CONVERSATION_NAME; // Workspace name goes here.
