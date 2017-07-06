@@ -96,7 +96,7 @@ function initConversation() {
         version: 'v1'
     });
     // check if the workspace ID is specified in the environment
-    conversationWorkspace =' b08c955f-a87d-4a92-bf42-63e28a5c396e';
+    conversationWorkspace ='b08c955f-a87d-4a92-bf42-63e28a5c396e';
     // if not, look it up by name or create one
     if (!conversationWorkspace) {
         const workspaceName = CONVERSATION_NAME; // Workspace name goes here.
